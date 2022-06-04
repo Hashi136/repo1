@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
+import {BrowserRouter as Router, Routes, Route, BrowserRouter} from "react-router-dom";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Register from "./register"
+import Form from "./ClientRegister"
+import DriverRegister from "./DriverRegister"
+import Form1 from "./VehicleRegister"
+
+function App  ()  {
+    return (
+        <Router>
+            <div className="App">
+                <div className="content">
+
+                    <Routes>
+                        <Route exact path="/" element={<Register/>}/>
+                        <Route exact path="/ClientRegister" element={<Form/>}/>
+                        <Route exact path="/VehicleRegister" element={<Form1/>}/>
+                        <Route exact path="/DriverRegister" element={<DriverRegister/>}/>
+                    </Routes>
+
+                </div>
+
+            </div>
+        </Router>
+    );
 }
 
 export default App;

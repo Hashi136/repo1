@@ -1,6 +1,61 @@
+
+
 .App {
   text-align: center;
+  background-color:gray;
+  Background-size:cover;
+  Background-position:center;
+  height: 100%;
+  text-decoration-color: #282c34;
 }
+
+
+.label{
+display: block;
+font-size: larger;
+color: white;
+padding: 5px;
+}
+
+.input{
+font-size: larger;
+padding: 5px;
+margin: 2px;
+
+}
+.btn{
+color: white;
+background-color: red;
+border-radius: 5px;
+font-size: larger;
+display: block;
+padding: 5px;
+margin: 10px auto;
+}
+
+.messages{
+display: flex;
+justify-content: center;
+}
+
+.error{
+display: block;
+background-color: red;
+color: white;
+width: fit-content;
+height: 50px;
+padding: 5px;
+}
+
+.success{
+display: block;
+background-color: lightblue;
+color: black;
+width: fit-content;
+height: 50px;
+padding: 5px;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -21,11 +76,78 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:white;
 }
 
 .App-link {
   color: #61dafb;
+
+}
+
+.Register {
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+a {
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.center {
+  border: 1px solid #FFFF00;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerItem{
+  display: inline-block;
+}
+
+
+
+.button {
+  display: inline-block;
+  background-color: #787878;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+
+
+.driverRegisterForm {
+  background: url("https://ngs-it.com/files/course/Backgrounds_in_CSS.jpg");
+}
+
+
+.ClientRegisterform {
+  background: url("https://ngs-it.com/files/course/Backgrounds_in_CSS.jpg");
+}
+
+.VehicleRegisterform {
+  background: url("https://ngs-it.com/files/course/Backgrounds_in_CSS.jpg");
 }
 
 @keyframes App-logo-spin {
